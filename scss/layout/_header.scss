@@ -1,0 +1,19 @@
+/**ENCABEZADO**/
+header {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+
+    padding: 10px;
+    margin-top: 0;
+
+    & div {
+        padding: 10px;
+        text-align: center;
+    }
+
+    & img {
+        width: 18rem;
+        transition: 3s;
+    }
+}

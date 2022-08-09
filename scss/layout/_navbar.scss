@@ -1,0 +1,13 @@
+/*BARRA DE NAVEGACÓN*/
+nav {
+    padding: 30px;
+    -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+
+    & ul li a {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $font-navbar;
+    }
+}

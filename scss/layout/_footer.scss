@@ -1,0 +1,27 @@
+/**PIE DE PAGINA**/
+.footer--contenedor {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+    margin-bottom: 0;
+
+    &_parrafo {
+        color: $color--white
+    }
+    &_parrafo-año{
+    
+        color: $color--orange;
+    }
+
+    &_redes div {
+        i {
+            margin: 0 8px;
+        }
+
+        & img {
+
+            width: 2.8em;
+            margin: 10px 15px;
+        }
+    }
+}
