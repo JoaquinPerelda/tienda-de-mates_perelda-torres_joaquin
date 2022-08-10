@@ -1,5 +1,5 @@
 .galeria {
-    background-color: #fff;
+    background: rgba(243, 243, 232, 0.952);
     border-radius: 4px;
     padding: 16px;
     box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.322);
@@ -13,6 +13,7 @@
 
 .nombre {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
 }
 
+/*Estas se aplican al contenido de layout/galeria.scss*/

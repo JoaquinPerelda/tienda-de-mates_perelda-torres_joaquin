@@ -117,11 +117,13 @@ footer {
             grid-template-rows: 1fr;
             text-align: center;
         }
+
+        .main--principal {
+            margin: 20px;
+        }
     }
 
-    .main--principal {
-        margin: 20px;
-    }
+
 }
 
 

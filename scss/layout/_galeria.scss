@@ -1,6 +1,7 @@
 .card-galeria {
     @extend .galeria;
-    max-width: 200px;
+    max-width: 270px;
+    
 
     img {
         @extend .foto;
@@ -14,6 +15,9 @@
     h3 {
         @extend .nombre;
         text-align: center;
+        text-transform: initial;
+        font-family:$font-navbar;
+
     }
 
 }

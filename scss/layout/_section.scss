@@ -1,4 +1,4 @@
-/**NOVEDADES**/
+/**Seccion Index: Novedades**/
 .section--novedades {
     background: #ADA996;
     background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
@@ -45,24 +45,33 @@
     }
 }
 
+/*Seccion Index: Informacion*/
+.bg-fondo {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+
 /**Seccion CONTACTO**/
 
-.section--contacto img{
+.section--contacto img {
     width: 50%;
 }
-.grilla--nosotros_main{
-    h1{
+
+.grilla--nosotros_main {
+    h1 {
         margin-top: 65px;
     }
-    &--contenido{
-    background: #8e9eab;
-    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
-    background: linear-gradient(to right, #eef2f3, #8e9eab);
-    /*sombra*/
-    -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-    box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+
+    &--contenido {
+        background: #8e9eab;
+        background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+        background: linear-gradient(to right, #eef2f3, #8e9eab);
+        /*sombra*/
+        -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+        box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
 
 
-}
+    }
 }
