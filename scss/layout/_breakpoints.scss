@@ -23,7 +23,7 @@ main {
     grid-area: contenido;
 }
 
-section {
+.section--novedades {
     grid-area: novedad;
 }
 
@@ -34,8 +34,14 @@ footer {
 .carrusel {
     grid-area: album;
 }
-.seccion-informacion{
+
+.seccion-informacion {
     grid-area: informacion;
+}
+
+.grilla-galeria {
+    grid-area: galeria;
+
 }
 
 /*breakpoints =380px pantallas pequeñas*/
@@ -47,11 +53,44 @@ footer {
         "album"
         "contenido"
         "informacion"
+        "galeria"
         "novedad"
         "pie";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 
+    .grilla-galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+
+.grilla--principal {
+    @include tablet {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "navegacion"
+            "album"
+            "contenido"
+            "informacion"
+            "galeria"
+            "novedad"
+            "pie";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        .grilla-galeria {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            text-align: center;
+        }
+    }
 }
 
 
@@ -65,10 +104,19 @@ footer {
             "album      novedad"
             "contenido  novedad"
             "contenido  novedad"
-            "informacion  novedad"
+            "informacion novedad"
+            "galeria novedad"
             "pie        pie";
         grid-template-columns: 4fr 1fr;
         grid-template-rows: 1fr;
+
+
+        .grilla-galeria {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            text-align: center;
+        }
     }
 
     .main--principal {
@@ -233,8 +281,9 @@ form {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin-top: 50px;
-    & .footer--contenedor{
-margin-top: 50px;
+
+    & .footer--contenedor {
+        margin-top: 50px;
     }
 }
 
