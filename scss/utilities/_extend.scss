@@ -1,8 +1,8 @@
 .galeria {
-    background: rgba(243, 243, 232, 0.952);
+    background: $color--white;
     border-radius: 4px;
     padding: 16px;
-    box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.322);
+    box-shadow: $box-sombra;
     text-align: center;
 }
 
@@ -17,3 +17,8 @@
 }
 
 /*Estas se aplican al contenido de layout/galeria.scss*/
+
+
+.caja-sombra {
+    box-shadow: $box-sombra;
+}

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tienda de Mates, encontrarás diversos estilos de mates, termos y bolsos materos, con envio a todo el pais">
-    <meta name="keywords" content="Mate, E-commerce, Mateando, Termos, Bolsos, Envios, Ofertas, Tienda online, Información, Pagos, Mercadopago">
+    <meta name="description"
+        content="Tienda de Mates, encontrarás diversos estilos de mates, termos y bolsos materos, con envio a todo el pais">
+    <meta name="keywords"
+        content="Mate, E-commerce, Mateando, Termos, Bolsos, Envios, Ofertas, Tienda online, Información, Pagos, Mercadopago">
     <link rel="icon" href="../img/favicon.svg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -74,8 +76,8 @@
 
         <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
             <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
+                <div class="card mb-4 rounded-3 caja-sombra">
+                    <div class="card-header py-3 ">
                         <h4 class="my-0  fw-bolder">MercadoPago</h4>
                     </div>
                     <div class="card-body">
@@ -86,7 +88,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card mb-4 rounded-3 caja-sombra">
                     <div class="card-header py-3">
                         <h4 class="my-0 fw-bolder">Transferencia</h4>
                     </div>
@@ -102,7 +104,7 @@
 
         <div class="row row-cols-1 row-cols-md-1 mb-3 text-center">
             <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card mb-4 rounded-3 caja-sombra">
                     <div class="card-header py-3">
                         <h4 class="my-0 fw-bolder">Envios</h4>
                     </div>
@@ -199,6 +201,99 @@
         </div>
     </main>
 
+
+
+    <section class="seccion--informacion  container-fluid px-4 py-5 bg-fondo text-light mb-5 caja-sombra"
+        id="hanging-icons">
+
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-dark flex-shrink-0 me-3">
+                    <img class="bg-light" src="../img/tarjeta-credito.svg" alt="Pagá con tarjeta o en efectivo">
+                </div>
+                <div>
+                    <h2>Pagá con tarjeta o en efectivo</h2>
+                    <p>Con Mercado Pago, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre
+                        es seguro!</p>
+
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-dark flex-shrink-0 me-3">
+                    <img class="bg-light" src="../img/envio-truck.svg" alt="Envío rápido y seguro">
+                </div>
+                <div>
+                    <h2>Envío rápido y seguro</h2>
+                    <p>Elegí Mercado Envíos y seguí tu compra hasta que la recibas. Todos tus paquetes estarán
+                        protegidos</p>
+
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-dark flex-shrink-0 me-3">
+                    <img class="bg-light" src="../img/compra-protegida.svg" alt="Compra Protegida">
+                </div>
+                <div>
+                    <h2>Compra Protegida</h2>
+                    <p>Te acompañamos hasta que recibas lo que compraste. Y si no es lo que esperabas, te devolvemos el
+                        dinero.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="accordion seccion-acordeon container mb-5" id="accordionPanelsStayOpenExample">
+
+        <h2 class="text-center">Preguntas Frecuentes</h2>
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bolder fs-4 bg-fondo text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    ¿Se puede pagar en cuotas?
+                </button>
+            </h3>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <p class="fs-4">Ofrecemos hasta 12 cuotas fijas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed fw-bolder fs-4 bg-fondo text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    ¿Cuál es el costo de los envíos?
+                </button>
+            </h3>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <p class="fs-4">El costo del envío varía según la provincia. A partir de los $4.500 los envíos son gratuitos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed fw-bolder fs-4 bg-fondo text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    ¿Tienen garantía los productos?
+                </button>
+            </h3>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <p class="fs-4">Tienen garantía de 2 meses por fallas de fabricación</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!--Fin Container-->

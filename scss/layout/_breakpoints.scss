@@ -35,7 +35,7 @@ footer {
     grid-area: album;
 }
 
-.seccion-informacion {
+.seccion--informacion {
     grid-area: informacion;
 }
 
@@ -168,12 +168,18 @@ footer {
 
 
 /**MEDIA QUERIES SECCION PAGOS E INFO**/
+.seccion-acordeon{
+    grid-area: acordeon;
+}
+
 .grilla--pagos {
     display: grid;
     grid-template-areas:
         "header"
         "navegacion"
         "contenido"
+        "informacion"
+        "acordeon"
         "pie";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;

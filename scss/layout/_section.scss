@@ -5,7 +5,9 @@
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     text-align: center;
     margin-bottom: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.415);
+    
+    box-shadow: $box-sombra;
+
 
     &_titulo {
         text-decoration: underline;
@@ -30,9 +32,7 @@
         }
 
         & iframe {
-            -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-            box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+            box-shadow: $box-sombra;
 
 
         }
@@ -68,10 +68,20 @@
         background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
         background: linear-gradient(to right, #eef2f3, #8e9eab);
         /*sombra*/
-        -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-        box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+        box-shadow: $box-sombra;
+
 
 
     }
+}
+
+.seccion--informacion {
+    box-shadow: $box-sombra;
+}
+
+.seccion--famosos {
+    box-shadow: $box-sombra;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 }

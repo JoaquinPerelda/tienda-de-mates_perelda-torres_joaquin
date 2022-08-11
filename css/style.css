@@ -7,10 +7,10 @@
   box-sizing: border-box; }
 
 .galeria, .card-galeria {
-  background: rgba(243, 243, 232, 0.952);
+  background: #ffffff;
   border-radius: 4px;
   padding: 16px;
-  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.322);
+  box-shadow: 1px 1px 12px 1px;
   text-align: center; }
 
 .foto, .card-galeria img {
@@ -21,6 +21,9 @@
   font-size: 15px; }
 
 /*Estas se aplican al contenido de layout/galeria.scss*/
+.caja-sombra {
+  box-shadow: 1px 1px 12px 1px; }
+
 /**ESTILO DE LOS TITULOS**/
 h1,
 h2,
@@ -63,9 +66,7 @@ header {
 /*BARRA DE NAVEGACÓN*/
 nav {
   padding: 30px;
-  -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75); }
+  box-shadow: 1px 1px 12px 1px; }
   nav ul li a {
     font-size: 20px;
     font-weight: bold;
@@ -88,15 +89,11 @@ h1 {
   background: -webkit-linear-gradient(to right, #c3cacc, #8092a1);
   background: linear-gradient(to right, #c3cacc, #8092a1);
   /*sombra*/
-  -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75); }
+  box-shadow: 1px 1px 12px 1px; }
 
 /*sombra en las cards*/
 .card {
-  -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 12px 1px;
   border: none;
   /*tamaño de las imagenes de las cards*/
   /*color en el fondo descriptivo de las cards*/ }
@@ -146,7 +143,7 @@ h1 {
   background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
   text-align: center;
   margin-bottom: 0;
-  border-left: 1px solid rgba(255, 255, 255, 0.415); }
+  box-shadow: 1px 1px 12px 1px; }
   .section--novedades_titulo {
     text-decoration: underline;
     margin: 20px 0 30px 0;
@@ -163,9 +160,7 @@ h1 {
     .section--novedades div p {
       margin-bottom: 20px; }
     .section--novedades div iframe {
-      -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-      box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75); }
+      box-shadow: 1px 1px 12px 1px; }
   .section--novedades_separador {
     height: 0.5px;
     margin: 0 5em 3em 5em;
@@ -189,9 +184,16 @@ h1 {
   background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
   background: linear-gradient(to right, #eef2f3, #8e9eab);
   /*sombra*/
-  -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75); }
+  box-shadow: 1px 1px 12px 1px; }
+
+.seccion--informacion {
+  box-shadow: 1px 1px 12px 1px; }
+
+.seccion--famosos {
+  box-shadow: 1px 1px 12px 1px;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000); }
 
 .card-galeria {
   max-width: 270px; }
@@ -202,14 +204,16 @@ h1 {
   .card-galeria h3 {
     text-align: center;
     text-transform: initial;
-    font-family: "Cairo", sans-serif; }
+    font-family: "Cairo", sans-serif;
+    color: #000000; }
 
 /**PIE DE PAGINA**/
 .footer--contenedor {
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  box-shadow: 1px 1px 12px 1px; }
   .footer--contenedor_parrafo {
     color: #ffffff; }
   .footer--contenedor_parrafo-año {
@@ -227,9 +231,7 @@ h1 {
   background: -webkit-linear-gradient(to right, #c3cacc, #8092a1);
   background: linear-gradient(to right, #c3cacc, #8092a1);
   /*sombra*/
-  -webkit-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 13px 11px 37px -9px rgba(0, 0, 0, 0.75); }
+  box-shadow: 1px 1px 12px 1px; }
 
 /**TODOS LOS MEDIA QUERIES**/
 /*Escala del logo en pantallas grandes*/
@@ -257,7 +259,7 @@ footer {
 .carrusel {
   grid-area: album; }
 
-.seccion-informacion {
+.seccion--informacion {
   grid-area: informacion; }
 
 .grilla-galeria {
@@ -323,9 +325,12 @@ footer {
     grid-template-rows: 1fr; } }
 
 /**MEDIA QUERIES SECCION PAGOS E INFO**/
+.seccion-acordeon {
+  grid-area: acordeon; }
+
 .grilla--pagos {
   display: grid;
-  grid-template-areas: "header" "navegacion" "contenido" "pie";
+  grid-template-areas: "header" "navegacion" "contenido" "informacion" "acordeon" "pie";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr; }
 
