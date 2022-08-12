@@ -1,0 +1,43 @@
+.galeria {
+    background: $color--white;
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: $box-sombra;
+    text-align: center;
+}
+
+.foto {
+    width: 100%;
+
+}
+
+.nombre {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/*Estas se aplican al contenido de layout/galeria.scss*/
+
+/*Clase global de elementos con sombra*/
+.caja-sombra {
+    box-shadow: $box-sombra;
+}
+
+
+/*Estilo boton global*/
+.global--btn{
+    background-color: $color--dark;
+    color: $color--white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(129, 126, 126);
+    transition: 0.9s;
+&:hover{
+    background-color: $color--orange;
+    color: $color--dark;
+    transition: 0.9s;
+}
+}
