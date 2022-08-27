@@ -22,8 +22,14 @@
 
 /*Estas se aplican al contenido de layout/galeria.scss*/
 /*Clase global de elementos con sombra*/
-.caja-sombra {
+.caja-sombra, .grilla--nosotros_img .nosotros-imagen {
   box-shadow: 1px 1px 12px 1px; }
+
+.caja-sombra_dos {
+  box-shadow: 1px 1px 8px 1px #00000056; }
+
+.caja-sombra_tres {
+  box-shadow: 1px 1px 8px 1px orange; }
 
 /*Estilo boton global*/
 .global--btn, .btn-contacto {
@@ -56,6 +62,9 @@ img {
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px solid #000000; }
 
+.img-novedad {
+  max-width: 100%; }
+
 /**CUERPO**/
 body {
   background-color: #ffffff;
@@ -71,25 +80,29 @@ header {
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
-  padding: 10px;
+  padding: 25px;
   margin-top: 0; }
   header div {
     padding: 10px;
     text-align: center; }
   header img {
-    width: 18rem;
-    transition: 3s; }
+    border-radius: 100%;
+    max-width: 100%;
+    transition: 3s;
+    box-shadow: 1px 1px 12px 1px; }
 
 /*BARRA DE NAVEGACÓN*/
 nav {
   padding: 30px;
   box-shadow: 1px 1px 12px 1px; }
   nav ul li a {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Cairo", sans-serif; }
+    font-size: 22px;
+    font-family: "Calibri"; }
 
 /**CONTENIDO PRINCIPAL**/
+.main--contenido, .main--tienda {
+  margin: 0 1rem 5rem 1rem; }
+
 h1 {
   text-transform: uppercase;
   font-size: 43px;
@@ -115,13 +128,22 @@ h1 {
   /*tamaño de las imagenes de las cards*/
   /*color en el fondo descriptivo de las cards*/ }
   .card img {
-    max-width: 124px;
     margin: auto; }
   .card-body_color {
     background: #000000;
     background: -webkit-linear-gradient(to right, #434343, #000000);
     background: linear-gradient(to right, #434343, #000000);
     color: #ffffff; }
+
+/*Contenido principal de seccion "tienda" */
+.main--tienda {
+  margin-top: 5rem; }
+
+.main--pagos {
+  margin-top: 5rem; }
+
+.grilla--nosotros_main {
+  margin-top: 5rem; }
 
 /**BOTONES**/
 /**Seccion Index: Novedades**/
@@ -154,19 +176,22 @@ h1 {
     margin: 0 5em 3em 5em;
     color: #020302; }
 
+.seccion--informacion {
+  box-shadow: 1px 1px 12px 1px; }
+
+.seccion--marcas {
+  box-shadow: 1px 1px 12px 1px;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000); }
+
 /*Seccion Index: Informacion*/
 .bg-fondo {
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000); }
 
-/**Seccion CONTACTO**/
-.section--contacto img {
-  width: 50%; }
-
-.grilla--nosotros_main h1 {
-  margin-top: 65px; }
-
+/**Sección NOSOTROS**/
 .grilla--nosotros_main--contenido {
   background: #8e9eab;
   background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
@@ -174,14 +199,14 @@ h1 {
   /*sombra*/
   box-shadow: 1px 1px 12px 1px; }
 
-.seccion--informacion {
-  box-shadow: 1px 1px 12px 1px; }
-
-.seccion--famosos {
-  box-shadow: 1px 1px 12px 1px;
-  background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000); }
+.grilla--nosotros_img {
+  padding: 1rem; }
+  .grilla--nosotros_img .nosotros-imagen {
+    transition: 2s;
+    color: orange; }
+    .grilla--nosotros_img .nosotros-imagen:hover {
+      transition: 2s;
+      filter: blur(2px); }
 
 .card-galeria {
   max-width: 270px; }
@@ -192,7 +217,7 @@ h1 {
   .card-galeria h3 {
     text-align: center;
     text-transform: initial;
-    font-family: "Cairo", sans-serif;
+    font-family: "Calibri";
     color: #000000; }
 
 /**PIE DE PAGINA**/
@@ -225,7 +250,8 @@ h1 {
 /*Escala del logo en pantallas grandes*/
 @media screen and (min-width: 1024px) {
   header img:hover {
-    transform: scale(1.2);
+    box-shadow: 0px 0px 15px 15px #ffa500;
+    transform: rotate(360deg);
     transition: 3s; } }
 
 /*PAGINA PRINCIPAL*/
@@ -295,7 +321,9 @@ footer {
 
 /**MEDIA QUERIES EN SECCIÓN TIENDA**/
 .barralateral {
-  grid-area: barra; }
+  grid-area: barra;
+  border-bottom: 1px solid #2e2e2e6b;
+  margin-top: 5rem; }
 
 /*pantallas pequeñas*/
 .grilla--tienda {
@@ -310,7 +338,10 @@ footer {
     display: grid;
     grid-template-areas: "header     header" "navegacion navegacion" "barra      contenido" "barra      contenido" "pie        pie";
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr; } }
+    grid-template-rows: 1fr; }
+    .grilla--tienda .barralateral {
+      margin-top: 4rem;
+      border-right: 1px solid #2e2e2e6b; } }
 
 /**MEDIA QUERIES SECCION PAGOS E INFO**/
 .seccion-acordeon {
@@ -324,19 +355,14 @@ footer {
 
 /**MEDIA QUERIES SECCIÓN NOSOTROS**/
 .grilla--nosotros_img {
-  grid-area: imagen-uno; }
+  grid-area: imagen; }
 
-.grilla--nosotros_img-dos {
-  grid-area: imagen-dos; }
+.nosotros--informacion_1 {
+  grid-area: texto-uno; }
 
-.nosotros--parrafo_1 {
-  grid-area: parrafo-uno; }
-
-.nosotros--parrafo_2 {
-  grid-area: parrafo-dos; }
-
-.nosotros--parrafo_3 {
-  grid-area: parrafo-tres; }
+.nosotros--informacion_2 {
+  grid-area: texto-dos;
+  margin-top: 4rem; }
 
 /*pantalla pequeña*/
 .grilla--nosotros {
@@ -348,27 +374,20 @@ footer {
 /*pantalla pequeña*/
 .grilla--nosotros_main--contenido {
   display: grid;
-  grid-template-areas: "parrafo-uno" "imagen-uno" "parrafo-dos" "imagen-dos" "parrafo-tres";
+  grid-template-areas: "texto-uno" "imagen" "texto-dos";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr; }
   .grilla--nosotros_main--contenido img {
-    margin: 10px 0;
-    width: 18em; }
+    max-width: 100%;
+    margin-top: 5rem; }
 
 /*pantalla grande*/
 @media screen and (min-width: 1024px) {
   .grilla--nosotros_main--contenido {
     display: grid;
-    grid-template-areas: "imagen-uno parrafo-uno" "parrafo-dos imagen-dos" "parrafo-tres parrafo-tres";
+    grid-template-areas: "imagen texto-uno" "imagen texto-uno" "texto-dos texto-dos";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    /*tamaño de imagen y escala*/ }
-    .grilla--nosotros_main--contenido .grilla--nosotros_img,
-    .grilla--nosotros_main--contenido .grilla--nosotros_img-dos {
-      padding: 20px; }
-      .grilla--nosotros_main--contenido .grilla--nosotros_img img,
-      .grilla--nosotros_main--contenido .grilla--nosotros_img-dos img {
-        width: 26em; } }
+    grid-template-rows: 1fr; } }
 
 /**MEDIA QUERIES SECCIÓN CONTACTO**/
 form {
@@ -376,8 +395,6 @@ form {
 
 .form--section {
   grid-area: seccion; }
-  .form--section img {
-    margin: 15px 0; }
 
 /*pantalla pequeña*/
 .grilla--contacto {
@@ -409,15 +426,5 @@ form {
 
 /*borde en lado izquierdo de section*/
 @media screen and (min-width: 768px) {
-  .form--section {
-    border-left: solid 1px #000000; }
-    .form--section p {
-      margin-top: 4em; } }
-
-/*escala de la imagen*/
-@media screen and (min-width: 1024px) {
-  .form--section img {
-    transition: 0.9s; }
-    .form--section img:hover {
-      transform: scale(1.03);
-      transition: 0.9s; } }
+  .form--section p {
+    margin-top: 4em; } }

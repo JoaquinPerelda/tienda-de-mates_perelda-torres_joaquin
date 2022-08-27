@@ -1,4 +1,9 @@
 /**CONTENIDO PRINCIPAL**/
+
+.main--contenido {
+    margin: 0 1rem 5rem 1rem;
+}
+
 h1 {
     text-transform: uppercase;
     font-size: 43px;
@@ -29,7 +34,6 @@ h1 {
 
     /*tamaño de las imagenes de las cards*/
     & img {
-        max-width: 124px;
         margin: auto;
     }
 
@@ -41,4 +45,17 @@ h1 {
         background: linear-gradient(to right, #434343, #000000);
         color: $color--white;
     }
+}
+
+/*Contenido principal de seccion "tienda" */
+.main--tienda {
+    @extend .main--contenido;
+    margin-top: 5rem;
+}
+
+.main--pagos{
+    margin-top: 5rem;
+}
+.grilla--nosotros_main{
+    margin-top: 5rem;
 }

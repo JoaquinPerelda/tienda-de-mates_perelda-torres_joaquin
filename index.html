@@ -14,16 +14,21 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Mateando</title>
+    <title>Dame un Mate</title>
 </head>
 
 <body class="grilla--principal">
+
+    <!--HEADER-->
+
     <header>
         <div>
-            <img src="./img/logotipo.svg" alt="Logo" />
+            <img src="./img/dame-un-mate-logo.svg" alt="Logo" />
         </div>
     </header>
 
+
+    <!--BARRA DE NAVEGACIÓN-->
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container-fluid">
             <button class="navbar-toggler border border-dark" type="button" data-bs-toggle="collapse"
@@ -34,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link text-danger active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link text-dark fw-bolder active" aria-current="page" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="./sections/tienda.html">Tienda</a>
@@ -45,27 +50,20 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="./sections/nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Contacto
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./sections/contacto.html">Formulario</a></li>
-                            <li>
-                                <a class="dropdown-item" href="http://www.coderhouse.com">Ir a CoderHouse</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./sections/contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2 bg-succes border border-dark" type="search" placeholder="Busqueda"
                         aria-label="Search" />
-                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                    <button class="btn btn-dark" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
     </nav>
+
+    <!--CARRUSEL DE FOTOS-->
 
     <div id="carouselExampleCaptions" class="carousel slide carrusel mt-3 mb-4 text-center" data-bs-ride="false">
         <div class="carousel-indicators">
@@ -99,14 +97,14 @@
         </button>
     </div>
 
+    <!--CONTENIDO PRINCIPAL - TIENDA-->
 
+    <main class="main--contenido text-center">
 
-    <main class="m-5 text-center">
-
-        <h1 class="text-center"><span>Mate</span>ando</h1>
+        <h1 class="text-center"><span>Feed</span></h1>
 
         <div class="container main--fondo">
-            <section class="row g-5 p-5">
+            <section class="row g-4 p-3">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="./img/producto-mate.svg" alt="Producto Mate">
@@ -452,7 +450,7 @@
 
     </main>
 
-
+    <!--SECCION INFORMACIÓN-->
 
     <div class="seccion--informacion  container-fluid px-4 py-5 bg-fondo text-light mb-5 caja-sombra"
         id="hanging-icons">
@@ -495,44 +493,44 @@
     </div>
 
 
+    <!--SECCIÓN PERSONAS QUE CONFIARON "GALERIA"-->
 
+    <section class="container text-center p-5 mb-5 seccion--marcas">
 
-    <section class="container text-center p-5 mb-5 seccion--famosos">
-
-        <h2 class="fw-bolder text-light">Famosos que Confiaron</h2>
+        <h2 class="fw-bolder text-light">Trabajamos con las siguientes marcas</h2>
 
         <div class="grilla-galeria">
             <div class="card-galeria">
-                <img src="./img/famosos/Dybala.svg" alt="Foto de Famosos: Dybala">
-                <h3>Dybala</h3>
+                <img src="./img/galeria/stanley.svg" alt="Foto de: Stanley">
+                <h3>Stanley</h3>
             </div>
             <div class="card-galeria">
-                <img src="./img/famosos/Griezmann.svg" alt="Foto de Famosos: Griezmann">
-                <h3>Griezmann</h3>
+                <img src="./img/galeria/thermos.svg" alt="Foto de: Thermos">
+                <h3>Thermos</h3>
             </div>
             <div class="card-galeria">
-                <img src="./img/famosos/Lucho.svg" alt="Foto de Famosos: Luis Suarez">
-                <h3>Suarez</h3>
+                <img src="./img/galeria/lumilagro.svg" alt="Foto de: Lumilagro">
+                <h3>Lumilagro</h3>
             </div>
             <div class="card-galeria">
-                <img src="./img/famosos/Messi.svg" alt="Foto de Famosos: Lionel Messi">
-                <h3>Messi</h3>
+                <img src="./img/galeria/caterpillar.svg" alt="Foto de: Caterpillar">
+                <h3>Caterpillar</h3>
             </div>
             <div class="card-galeria">
-                <img src="./img/famosos/Roman.svg" alt="Foto de Famosos: Roman Riquelme">
-                <h3>Riquelme</h3>
+                <img src="./img/galeria/amanda.svg" alt="Foto de: Amanda">
+                <h3>Amanda</h3>
             </div>
             <div class="card-galeria">
-                <img src="./img/famosos/Ronaldo.svg" alt="Foto de Famosos: Cristiano Ronaldo">
-                <h3>Ronaldo</h3>
+                <img src="./img/galeria/journey.svg" alt="Foto de: Journey">
+                <h3>Journey</h3>
             </div>
             <div class="card-galeria">
-                <img src="./img/famosos/Neymar.svg" alt="Foto de Famosos: Neymar">
-                <h3>Neymar</h3>
+                <img src="./img/galeria/coleman.svg" alt="Foto de: Coleman">
+                <h3>Coleman</h3>
             </div>
             <div class="card-galeria">
-                <img src="./img/famosos/Rossi.svg" alt="Foto de Famosos: Rossi">
-                <h3>Rossi</h3>
+                <img src="./img/galeria/montagne.svg" alt="Foto de Famosos: Montagne">
+                <h3>Montagne</h3>
             </div>
         </div>
     </section>
@@ -542,7 +540,7 @@
 
 
 
-
+    <!--SECCIÓN NOVEDADES-->
 
 
     <section class="section--novedades caja-sombra">
@@ -588,6 +586,7 @@
                 allowfullscreen></iframe>
         </div>
 
+
         <hr class="section--novedades_separador" />
 
         <div>
@@ -597,6 +596,58 @@
                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1684.1953330546294!2d-63.232051000000006!3d-32.408692!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1659052063429!5m2!1ses-419!2sar"
                 width="auto" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="section--novedades_separador" />
+
+        <div>
+            <h4>Día del Mate</h4>
+            <div>
+                <p>El 30 de noviembre se celebra el Día Nacional del Mate</p>
+                <img class="img-novedad mb-2" src="./img/dia-del-mate.svg" alt="">
+                <!-- Boton Modal -->
+                <button type="button" class="btn btn-warning btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Leer Mas
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bolder" id="staticBackdropLabel">Día del Mate</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="img-novedad" src="./img/dia-del-mate.svg" alt="">
+                                <p class="mt-4">Cada <span class="fw-bolder">30 de noviembre</span> se celebra el Día
+                                    Nacional del Mate, una de las
+                                    infusiones más
+                                    preferidas por los argentinos. La fecha data desde 2015 y se conmemora en homenaje
+                                    al
+                                    caudillo <span class="fw-bolder">Andrés Guacurarí y Artigas</span>, más conocido
+                                    como Andresito. No fue solamente el
+                                    único gobernador indígena de la historia argentina, sino que fomentó la producción y
+                                    distribución de la yerba mate.</p>
+                                <img class="img-novedad" src="./img/Andresito.svg" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
         </div>
 
     </section>

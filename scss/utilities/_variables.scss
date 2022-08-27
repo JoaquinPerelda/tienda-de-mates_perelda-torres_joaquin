@@ -4,11 +4,13 @@ $color--dark: #000000;
 
 
 $box-sombra: 1px 1px 12px 1px;
+$box-sombra-dos: 1px 1px 8px 1px #00000056;
+$box-sombra-tres: 1px 1px 8px 1px orange;
 
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Montserrat:wght@300;400;700&family=Open+Sans&family=Varela&display=swap");
 
-$font-navbar: 'Cairo', sans-serif;
+$font-navbar: 'Calibri';
 $font-default: 'Montserrat', sans-serif;
 $font-tittle: 'Open Sans', sans-serif;
 $font-varela: 'Varela', sans-serif;

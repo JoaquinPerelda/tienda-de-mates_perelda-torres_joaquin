@@ -20,7 +20,8 @@
 <body class="grilla--tienda">
 
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning text-center">
+       <!--BARRA DE NAVEGACIÓN-->
+       <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler border border-dark" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -28,12 +29,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-danger active" aria-current="page" href="./tienda.html">Tienda</a>
+                        <a class="nav-link text-dark fw-bolder active" aria-current="page" href="./tienda.html">Tienda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="./pagos.html">Pagos e Info</a>
@@ -41,22 +42,14 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="./nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Contacto
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./contacto.html">Formulario</a></li>
-                            <li> <a class="dropdown-item" href="http://www.coderhouse.com">Ir a CoderHouse</a> </li>
-
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2 bg-succes border border-dark" type="search" placeholder="Busqueda"
-                        aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                        aria-label="Search" />
+                    <button class="btn btn-dark" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -66,7 +59,7 @@
 
 
 
-    <div class="barralateral mt-5 flex-shrink-0 p-3 bg-warning border border-dark text-center caja-sombra expand-lg">
+    <div class="barralateral flex-shrink-0 p-3 bg-warning text-center caja-sombra_dos expand-lg">
         <a href="#">
             <h3 class="text-center text-dark fw-bolder fs-4">Catálogo</h3>
         </a>
@@ -157,12 +150,12 @@
 
 
 
-    <main class="main--tienda m-5 text-center">
+    <main class="main--tienda text-center">
 
-        <h1 class="my-4 fw-bolder text-center">Tienda</h1>
+        <h1 class="fw-bolder text-center">Tienda</h1>
 
         <div class="container mt-5 main--fondo">
-            <section class="row g-5 p-5">
+            <section class="row g-4 p-3 ">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="../img/producto-mate.svg" alt="Producto Mate">

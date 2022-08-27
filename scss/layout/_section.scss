@@ -5,7 +5,7 @@
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     text-align: center;
     margin-bottom: 0;
-    
+
     box-shadow: $box-sombra;
 
 
@@ -38,11 +38,25 @@
         }
     }
 
+
+
     &_separador {
         height: 0.5px;
         margin: 0 5em 3em 5em;
         color: rgb(2, 3, 2);
     }
+}
+
+
+.seccion--informacion {
+    box-shadow: $box-sombra;
+}
+
+.seccion--marcas {
+    box-shadow: $box-sombra;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 }
 
 /*Seccion Index: Informacion*/
@@ -52,16 +66,8 @@
     background: linear-gradient(to right, #434343, #000000);
 }
 
-/**Seccion CONTACTO**/
-
-.section--contacto img {
-    width: 50%;
-}
-
+/**Sección NOSOTROS**/
 .grilla--nosotros_main {
-    h1 {
-        margin-top: 65px;
-    }
 
     &--contenido {
         background: #8e9eab;
@@ -69,19 +75,20 @@
         background: linear-gradient(to right, #eef2f3, #8e9eab);
         /*sombra*/
         box-shadow: $box-sombra;
-
-
-
     }
 }
 
-.seccion--informacion {
-    box-shadow: $box-sombra;
-}
+.grilla--nosotros_img {
+    padding: 1rem;
 
-.seccion--famosos {
-    box-shadow: $box-sombra;
-    background: #000000;
-    background: -webkit-linear-gradient(to right, #434343, #000000);
-    background: linear-gradient(to right, #434343, #000000);
+    & .nosotros-imagen {
+        transition: 2s;
+        @extend .caja-sombra;
+        color: orange;
+
+        &:hover {
+            transition: 2s;
+            filter: blur(2px);
+        }
+    }
 }

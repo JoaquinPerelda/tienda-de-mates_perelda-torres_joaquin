@@ -22,7 +22,12 @@
 .caja-sombra {
     box-shadow: $box-sombra;
 }
-
+.caja-sombra_dos {
+    box-shadow: $box-sombra-dos;
+}
+.caja-sombra_tres{
+    box-shadow: $box-sombra-tres;
+}
 
 /*Estilo boton global*/
 .global--btn{
