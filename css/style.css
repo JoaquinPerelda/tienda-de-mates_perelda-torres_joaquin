@@ -80,11 +80,13 @@ header {
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
-  padding: 25px;
+  padding: 12px;
   margin-top: 0; }
   header div {
     padding: 10px;
     text-align: center; }
+  header a {
+    color: orangered; }
   header img {
     border-radius: 100%;
     max-width: 100%;
